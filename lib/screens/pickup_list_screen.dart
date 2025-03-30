@@ -39,7 +39,9 @@ class PickupListScreen extends StatelessWidget {
           return ListTile(
             title: Text('Pickup ID: ${pickup['id']}'),
             subtitle: Text(
-              'Location: ${pickup["location"]}\nTime Slot: ${pickup['time_slot']}\nInventory Size: ${pickup['inventory']}',
+              'Location: ${pickup["location"].latitude}, ${pickup["location"].longitude}\n'
+              'Time Slot: ${pickup['time_slot']}\n'
+              'Inventory Size: ${pickup['inventory']}',
               maxLines: 5,
             ),
             trailing: IconButton(

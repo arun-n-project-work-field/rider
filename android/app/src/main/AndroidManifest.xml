@@ -7,6 +7,8 @@ package="com.example.rider">
         android:label="rider"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDaswwoWSpQz3ReR1mqjlZ4CpVz5HcuIZc"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
